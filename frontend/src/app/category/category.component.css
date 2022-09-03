@@ -1,0 +1,17 @@
+div{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+div a{
+    font-weight: 600;
+    text-align: center;
+    margin: 10px;
+    text-decoration: none;
+}
+
+div a img{
+    width: 330px;
+    height: 200px;
+}
