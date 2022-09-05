@@ -1,4 +1,5 @@
 import { NgModule } from '@angular/core';
+import { ReactiveFormsModule } from '@angular/forms';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
@@ -18,9 +19,20 @@ import { TermsconditionComponent } from './termscondition/termscondition.compone
 import { OrderhistoryComponent } from './orderhistory/orderhistory.component';
 import { GalleryComponent } from './gallery/gallery.component';
 
+import { LoginComponent } from './login/login.component';
+
+import { HttpClientModule } from '@angular/common/http';
+import { WishlistComponent } from './wishlist/wishlist.component';
+import { RegisterComponent } from './register/register.component';
+import { ShopComponent } from './shop/shop.component';
+
+import { CategoryComponent } from './category/category.component';
+
+
 @NgModule({
   declarations: [
     AppComponent,
+<<<<<<< HEAD
     HeaderComponent,
     HomeComponent,
     FooterComponent,
@@ -34,11 +46,23 @@ import { GalleryComponent } from './gallery/gallery.component';
     TermsconditionComponent,
     OrderhistoryComponent,
     GalleryComponent,
+=======
+    LoginComponent,
+    WishlistComponent,
+    RegisterComponent,
+    ShopComponent,
+    CategoryComponent
+>>>>>>> 4017f555e00c19de81f9b5520fee2f068c287f91
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
+<<<<<<< HEAD
     NgbModule
+=======
+    ReactiveFormsModule,
+    HttpClientModule
+>>>>>>> 4017f555e00c19de81f9b5520fee2f068c287f91
   ],
   providers: [],
   bootstrap: [AppComponent]

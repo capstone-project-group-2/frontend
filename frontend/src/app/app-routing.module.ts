@@ -11,6 +11,7 @@ import {OrderhistoryComponent} from './orderhistory/orderhistory.component';
 import {GalleryComponent} from './gallery/gallery.component';
  
 
+<<<<<<< HEAD
 const routes: Routes = [
   {path:'',component:HomeComponent},
   {path:'aboutus',component:AboutusComponent},
@@ -21,6 +22,28 @@ const routes: Routes = [
   {path:'termscondion',component:TermsconditionComponent},
   {path:'orderhistory',component:OrderhistoryComponent},
   {path:'gallery',component:GalleryComponent}
+=======
+import { LoginComponent } from './login/login.component';
+import { WishlistComponent } from './wishlist/wishlist.component';
+import { CategoryComponent } from './category/category.component';
+import { RegisterComponent } from './register/register.component';
+import { ShopComponent } from './shop/shop.component';
+
+
+  
+
+
+
+const routes: Routes = [
+{path:'login',component:LoginComponent},
+  {path:'wishlist',component:WishlistComponent},
+
+  {path:'register',component:RegisterComponent},
+  {path:'shop',component:ShopComponent},
+  {path:'category',component:CategoryComponent},
+  {path:'category/:category',component:ShopComponent}
+
+>>>>>>> 4017f555e00c19de81f9b5520fee2f068c287f91
 ];
 
 @NgModule({
