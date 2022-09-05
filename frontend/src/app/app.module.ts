@@ -32,7 +32,6 @@ import { CategoryComponent } from './category/category.component';
 @NgModule({
   declarations: [
     AppComponent,
-<<<<<<< HEAD
     HeaderComponent,
     HomeComponent,
     FooterComponent,
@@ -46,23 +45,18 @@ import { CategoryComponent } from './category/category.component';
     TermsconditionComponent,
     OrderhistoryComponent,
     GalleryComponent,
-=======
     LoginComponent,
     WishlistComponent,
     RegisterComponent,
     ShopComponent,
     CategoryComponent
->>>>>>> 4017f555e00c19de81f9b5520fee2f068c287f91
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-<<<<<<< HEAD
-    NgbModule
-=======
+    NgbModule,
     ReactiveFormsModule,
     HttpClientModule
->>>>>>> 4017f555e00c19de81f9b5520fee2f068c287f91
   ],
   providers: [],
   bootstrap: [AppComponent]
