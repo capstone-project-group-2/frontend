@@ -1,8 +1,10 @@
 import { Component, OnInit } from '@angular/core';
+
 import { Router } from '@angular/router';
 import { CartService } from '../cart.service';
 import { Cart } from '../model/cart';
 import { CartItem } from '../model/cartItems';
+
 
 @Component({
   selector: 'app-cart',
@@ -10,6 +12,7 @@ import { CartItem } from '../model/cartItems';
   styleUrls: ['./cart.component.css']
 })
 export class CartComponent implements OnInit {
+
 
   cart!:Cart
 
@@ -40,6 +43,11 @@ export class CartComponent implements OnInit {
 
   click(){
     this.router.navigateByUrl("/payment")
+
+  constructor() { }
+
+  ngOnInit(): void {
+
   }
 
 }
