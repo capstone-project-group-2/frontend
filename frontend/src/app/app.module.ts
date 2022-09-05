@@ -26,6 +26,10 @@ import { RegisterComponent } from './register/register.component';
 import { ShopComponent } from './shop/shop.component';
 
 import { CategoryComponent } from './category/category.component';
+import { ViewComponent } from './view/view.component';
+import { CartComponent } from './cart/cart.component';
+import { PaymentComponent } from './payment/payment.component';
+import { InvoiceComponent } from './invoice/invoice.component';
 
 
 @NgModule({
@@ -49,7 +53,15 @@ import { CategoryComponent } from './category/category.component';
     WishlistComponent,
     RegisterComponent,
     ShopComponent,
+
+    CategoryComponent,
+    ViewComponent,
+    CartComponent,
+    PaymentComponent,
+    InvoiceComponent
+
     CategoryComponent
+
 
   ],
   imports: [
@@ -59,6 +71,10 @@ import { CategoryComponent } from './category/category.component';
     NgbModule,
 
     ReactiveFormsModule,
+
+    HttpClientModule,
+    
+
     HttpClientModule
 
   ],
