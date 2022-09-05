@@ -36,13 +36,13 @@ getAllCategory(): Category[]{
  database():Product[]{
  return [
     {id:1,name:"chips",categories:["all","food"],description:"good",price:200,image:"../../assets/regimg.webp"},
-    {id:1,name:"pickle",categories:["all","food"],description:"good",price:200,image:"../../assets/regimg.webp"},
-    {id:1,name:"soap",categories:["all","grocery"],description:"good",price:200,image:"../../assets/regimg.webp"},
-    {id:1,name:"handwash",categories:["all","grocery"],description:"good",price:200,image:"../../assets/regimg.webp"},
-    {id:1,name:"mat",categories:["all","household"],description:"good",price:200,image:"../../assets/regimg.webp"},
-    {id:1,name:"candle",categories:["all","household"],description:"good",price:200,image:"../../assets/regimg.webp"},
-    {id:1,name:"sanitizer",categories:["all","health"],description:"good",price:200,image:"../../assets/regimg.webp"},
-    {id:1,name:"mask",categories:["all","health"],description:"good",price:200,image:"../../assets/regimg.webp"}
+    {id:2,name:"pickle",categories:["all","food"],description:"good",price:200,image:"../../assets/regimg.webp"},
+    {id:3,name:"soap",categories:["all","grocery"],description:"good",price:200,image:"../../assets/regimg.webp"},
+    {id:4,name:"handwash",categories:["all","grocery"],description:"good",price:200,image:"../../assets/regimg.webp"},
+    {id:5,name:"mat",categories:["all","household"],description:"good",price:200,image:"../../assets/regimg.webp"},
+    {id:6,name:"candle",categories:["all","household"],description:"good",price:200,image:"../../assets/regimg.webp"},
+    {id:7,name:"sanitizer",categories:["all","health"],description:"good",price:200,image:"../../assets/regimg.webp"},
+    {id:8,name:"mask",categories:["all","health"],description:"good",price:200,image:"../../assets/regimg.webp"}
    ]
   
  }

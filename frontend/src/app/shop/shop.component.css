@@ -15,3 +15,10 @@
     transform: scale(1.05);
     transition: 0.5s;
 }
+.heart{
+    height: 40px;
+    width: 40px;
+}
+.img2{
+    margin-left: 245px;
+}

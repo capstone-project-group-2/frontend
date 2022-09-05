@@ -15,7 +15,7 @@ const routes: Routes = [
   {path:'category',component:CategoryComponent},
   {path:'category/:category',component:ShopComponent},
   {path:'login',component:LoginComponent},
-  {path:'wishlist',component:WishlistComponent}
+  {path:'wishlist/:id',component:WishlistComponent}
 ];
 
 @NgModule({

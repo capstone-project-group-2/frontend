@@ -1,6 +1,7 @@
 import { HttpClient } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder,Validators } from '@angular/forms';
+import { UserService } from '../user.service';
 
 @Component({
   selector: 'app-login',
@@ -14,11 +15,12 @@ export class LoginComponent implements OnInit {
 
   })
 
-  constructor(private fb:FormBuilder,private http:HttpClient ) { }
+  constructor(private fb:FormBuilder,private http:HttpClient ,private ds:UserService) { }
 
   ngOnInit(): void {
   }
   login(){
-    alert("login successfully")
-  }
+
+  
 }
+} 

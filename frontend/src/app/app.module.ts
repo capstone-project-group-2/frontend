@@ -6,13 +6,19 @@ import { LoginComponent } from './login/login.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { WishlistComponent } from './wishlist/wishlist.component';
+import { RegisterComponent } from './register/register.component';
+import { ShopComponent } from './shop/shop.component';
+import { CategoryComponent } from './category/category.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
     LoginComponent,
-    WishlistComponent
+    WishlistComponent,
+    RegisterComponent,
+    ShopComponent,
+    CategoryComponent
   ],
   imports: [
     BrowserModule,
