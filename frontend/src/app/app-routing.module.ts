@@ -1,5 +1,8 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+
+import { CartComponent } from './cart/cart.component';
+
 import { AboutusComponent } from './aboutus/aboutus.component';
 import { HomeComponent } from './home/home.component';
 import { MyprofileComponent } from './myprofile/myprofile.component';
@@ -15,7 +18,22 @@ import {TermsconditionComponent} from './termscondition/termscondition.component
 import {OrderhistoryComponent} from './orderhistory/orderhistory.component';
 import {GalleryComponent} from './gallery/gallery.component';
 
+
  
+
+
+
+import { InvoiceComponent } from './invoice/invoice.component';
+import { PaymentComponent } from './payment/payment.component';
+import { GeneratorModule } from './generator/generator.module';
+
+
+
+import { ViewComponent } from './view/view.component';
+
+ 
+
+
 
 const routes: Routes = [
   {path:'',component:HomeComponent},
@@ -28,13 +46,32 @@ const routes: Routes = [
   {path:'orderhistory',component:OrderhistoryComponent},
   {path:'gallery',component:GalleryComponent},
   {path:'login',component:LoginComponent},
-  {path:'wishlist',component:WishlistComponent},
   {path:'register',component:RegisterComponent},
   {path:'shop',component:ShopComponent},
   {path:'category',component:CategoryComponent},
-  {path:'category/:category',component:HomeComponent}
+  {path:'category/:category',component:HomeComponent},
+  {path:'wishlist/:id',component:WishlistComponent},
+  {path:'geneator',component:GeneratorModule},
+  {path:'view/:id',component:ViewComponent},
+  {path:'cart',component:CartComponent},
+  {path:'payment',component:PaymentComponent},
+  {path:'invoice',component:InvoiceComponent}
 
 ];
+
+
+
+
+
+  
+
+
+
+
+  
+
+
+
 
 
 @NgModule({

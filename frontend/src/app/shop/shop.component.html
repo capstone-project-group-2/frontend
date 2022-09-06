@@ -1,6 +1,12 @@
+
+<app-category></app-category>
+
 <div class="row">
-    <div class="card crd1 col-md-3" *ngFor='let item of product'>
-        <img src="{{item.image}}" class=" img card-img-top"  >
+    <div class="card col-md-3" *ngFor='let item of product'>
+      <!-- <i class="fas fa-heart"></i> -->
+      <img src="../../assets/heart.png" alt="" style="height:30px;width:30px" class="img2" routerLink="/wishlist/{{item.id}}"(click)="addtowishlist(item)">
+
+        <img src="{{item.image}}" class=" img card-img-top" routerLink="/view/{{item.id}}" >
        
         <div class="card-body">
           <h4>{{item.name}}</h4>

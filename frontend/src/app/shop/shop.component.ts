@@ -2,6 +2,8 @@ import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
 import { Product } from '../model/product';
 import { UserService } from '../user.service';
+import { WishService } from '../wish.service';
+import { WishlistComponent } from '../wishlist/wishlist.component';
 
 @Component({
   selector: 'app-shop',
@@ -12,7 +14,7 @@ export class ShopComponent implements OnInit {
 
   product:Product[]=[]
 
-  constructor(private ds:UserService,private route:ActivatedRoute,private router:Router ) { }
+  constructor(private ds:UserService,private route:ActivatedRoute,private router:Router,private wish:WishService) { }
 
   ngOnInit(): void {
 
@@ -28,6 +30,10 @@ export class ShopComponent implements OnInit {
       this.product = this.ds.database();
     })
 
+
+  }
+  addtowishlist(item:any){
+    this.wish.addtowishlist(item);
 
   }
 

@@ -35,6 +35,7 @@ getAllCategory(): Category[]{
 
  database():Product[]{
  return [
+
     {id:1,name:"Chips",categories:["All","Food"],description:"good",price:200,image:"../../assets/regimg.webp"},
     {id:1,name:"Pickle",categories:["All","Food"],description:"good",price:200,image:"../../assets/regimg.webp"},
     {id:1,name:"Soap",categories:["All","Grocery"],description:"good",price:200,image:"../../assets/regimg.webp"},
@@ -43,8 +44,34 @@ getAllCategory(): Category[]{
     {id:1,name:"Candle",categories:["All","Household"],description:"good",price:200,image:"../../assets/regimg.webp"},
     {id:1,name:"Sanitizer",categories:["All","Health"],description:"good",price:200,image:"../../assets/regimg.webp"},
     {id:1,name:"Mask",categories:["All","Health"],description:"good",price:200,image:"../../assets/regimg.webp"}
+
    ]
   
  }
+
+
+ submit(username:any,email:any,password:any){
+
+  const data={
+      username,
+      email,
+      password
+    }
+
+  return this.http.post('https://flat-goats-enjoy-202-164-133-86.loca.lt/account/register/',data)
+ }
+
+
+login(username:any,password:any){
+
+const data={
+  username,
+  password
+}
+
+return  this.http.post('https://flat-goats-enjoy-202-164-133-86.loca.lt/account/login/',data);
+
+}
+
  
 }
