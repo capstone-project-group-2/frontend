@@ -20,6 +20,9 @@ import { InvoiceComponent } from './invoice/invoice.component';
 import { PaymentComponent } from './payment/payment.component';
 import { RegisterComponent } from './register/register.component';
 import { ShopComponent } from './shop/shop.component';
+import { GeneratorModule } from './generator/generator.module';
+
+
 
 import { ViewComponent } from './view/view.component';
 
@@ -38,11 +41,13 @@ const routes: Routes = [
   {path:'orderhistory',component:OrderhistoryComponent},
   {path:'gallery',component:GalleryComponent},
   {path:'login',component:LoginComponent},
-  {path:'wishlist',component:WishlistComponent},
 
   {path:'register',component:RegisterComponent},
   {path:'shop',component:ShopComponent},
   {path:'category',component:CategoryComponent},
+  {path:'wishlist/:id',component:WishlistComponent},
+  {path:'geneator',component:GeneratorModule},
+
 
   {path:'category/:category',component:ShopComponent},
   {path:'view/:id',component:ViewComponent},
