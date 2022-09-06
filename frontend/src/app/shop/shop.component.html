@@ -5,9 +5,7 @@
       <!-- <i class="fas fa-heart"></i> -->
       <img src="../../assets/heart.png" alt="" style="height:30px;width:30px" class="img2" routerLink="/wishlist/{{item.id}}"(click)="addtowishlist(item)">
 
-        <img src="{{item.image}}" class=" img card-img-top"  >
-        <!-- <i class=" heart fa-regular fa-heart"></i> -->
-        <!-- <i class="bi bi-heart"></i> -->
+        <img src="{{item.image}}" class=" img card-img-top" routerLink="/view/{{item.id}}" >
        
         <div class="card-body">
           <h4>{{item.name}}</h4>

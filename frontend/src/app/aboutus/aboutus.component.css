@@ -1,0 +1,111 @@
+.mainbody{
+    width: 90%;
+    /* display: flex; */
+}
+.card{
+    height: 400px;
+    margin-top: 10px;
+    margin-left: 10%;
+    border-radius: 0;
+    background-color: rgb(220, 230, 219);
+    border-color: antiquewhite;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.cardbody h1{
+    margin-top: 60px;
+    padding-left: 10px;
+}
+.cardbody h2{
+    margin-top: 30px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.cardbody h5{
+    margin-top: 30px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.crd1{
+    background-color:white;
+
+    margin-left: -25px;
+    border-color: white;
+}
+#monitor{
+    width: 200px;
+    height: 200px;
+    margin-left: 30%;
+    margin-top: 40px;
+}
+.system-data{
+    display: flex;
+    list-style: none;
+    margin-top: 30px;
+}
+#card{
+    margin-left: 30px;
+}
+#package{
+    margin-left: 60px;
+}
+#van{
+    margin-left: 60px;
+}
+#smile{
+    margin-left: 60px;
+}
+.system-data-txt{
+    list-style: none;
+    display: flex;
+    font-size: medium;
+    /* margin-left: 10px; */
+}
+#pay{
+    margin-left: 20px;
+}
+#pack{
+    margin-left: 20px;
+}
+#del{
+    margin-left: 20px;
+}
+#policy{
+    margin-left: 20px;
+}
+.crd2{
+    /* margin-left: 0; */
+    height: 345px;
+    margin-top: 0%;
+    background-color: white;
+    border-color: white;
+}
+.crd2 h2{
+    margin-top: 30px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.crd2 h6{
+    margin-top: 30px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.crd3{
+    margin-left: 0px;
+    margin-top: 0.5px;
+}
+.crd3 h1{
+    margin-top: 60px;
+    padding-left: 10px;
+}
+.crd3 h4{
+    margin-top: 30px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.crd3 h5{
+    margin-top: 30px;
+    padding-left: 10px;
+    padding-right: 10px;
+}

@@ -1,0 +1,71 @@
+<form>
+    <div class="myprofile">
+        <!-- <div class="container"> -->
+            <div class="row">
+                <div class="profileleft col-md-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <div id="crdimg">
+                                <img src="../../assets/profile.jpg" width="60" height="60" alt="">
+                            </div>
+                            <div *ngIf="loggedin()" id="crddata">
+                                <h4>Hello !</h4>
+                                <h5>Rohan Babu</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-body1">
+                            <div>
+                                <h3>My Account</h3>
+                                <h5>Orders & Credits</h5>
+                                <h6>Orders</h6>
+                                <h6>My Rewards</h6>
+                                <h6>Customer Care</h6>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card" id="card1">
+                        <div class="card-body2">
+                            <div>
+                                <h3>Profile</h3>
+                                <h6>Personal informations</h6>
+                                <h6>Address Book</h6>
+                                <h6>Payments</h6>
+                                <h6> <i class="fas fa-sign-out-alt"></i>Logout</h6>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+            <div class="profileright col-md-8">
+                 <div class="card" id="rightcard">
+                    <div>
+                         <h3>Personal informations</h3>
+                    </div>
+                    <div>
+                        <input id="firstname" type="text" placeholder="Firstname">&nbsp;
+                        <input id="lastname" type="text" placeholder="Lastname">
+                    </div>
+                    <div id="gender" >
+                        <h6>Your Gender</h6>
+                        <input id="male" type="radio" name="gender">Male&nbsp;&nbsp;
+                        <input id="female"  type="radio" name="genter">Female
+                    </div>
+                    <div id="email">
+                        <h6>Email Address</h6>
+                        <input id="txtemail" type="text" placeholder="Email">
+                    </div>
+                    <div id="mobile">
+                        <h6>Mobile</h6>
+                        <input id="txtmobile" type="text" placeholder="Mobile Number">
+                    </div>
+                    <div id="btn1">
+                        <button class="btn btn-primary">Submit</button>
+                    </div>
+    
+                 </div>
+            </div>
+            </div>
+        <!-- </div> -->
+    </div>
+</form>

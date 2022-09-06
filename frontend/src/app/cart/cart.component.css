@@ -1,0 +1,56 @@
+
+.image{
+    margin-top: 30px;
+    height: max-content;
+    width: 100%;
+}
+.image img{
+    height: 100px;
+    width: 100px;
+    border-radius: 10px;
+}
+.cont{
+    margin-left: 250px;
+    margin-top: -105px;
+}
+.row{
+    display: flex;
+    justify-content: space-between;
+}
+
+.container{
+    margin-left: 50px;
+    margin-top: 50px;
+    border: solid;
+    height:auto;
+    width:800px ;
+}
+.list{
+    list-style: none;
+}
+.remove{
+    margin-top: 10px;
+    margin-left: 300px;
+}
+.order{
+    border: solid;
+    margin-left: 960px;
+    margin-top: -200px;
+    width: 315px;
+    height: 323px;
+    padding-left: 104px;
+    padding: 50px;
+    position: absolute;
+    top: 10px;
+
+}
+.placebtn{
+    margin-top: 60px;
+    width: 200px;
+    margin-left: 10px;
+   
+}
+#sticky{
+    position:fixed;
+    top:350px;
+}

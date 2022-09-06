@@ -1,0 +1,81 @@
+.myprofile{
+    background-color: rgb(252, 253, 253);
+    width: 100%;
+    display: inline-block;
+    height: 100%;
+}
+.card{
+    width: 400px;
+    margin-top: 10px;
+    margin-left: 20px;
+    border-radius: 0;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+#card1{
+    margin-top: 0;
+}
+.card-body{
+    display: flex;
+}
+#crddata h4{
+    /* display: flex; */
+    margin-left: 70px;
+}
+#crddata h5{
+    margin-left: 50px;
+}
+.card-body1 h3{
+    margin-left: 20px;
+}
+.card-body1 h5,h6{
+    margin-left: 40px;
+}
+.card-body2 h3{
+    margin-left: 20px;
+}
+.card-body2 h5,h6{
+    margin-left: 40px;
+}
+#rightcard{
+    width: 800px;
+    height: 425px;
+    /* margin-left: 0; */
+}
+#rightcard h3{
+    margin-top: 20px;
+    margin-left: 30px;
+}
+#firstname{
+    width: 350px;
+    margin-left: 30px;
+}
+#lastname{
+    width: 350px;
+}
+#gender h6{
+    margin-top: 20px;
+    margin-left: 30px;
+}
+#male{
+    margin-left: 30px;
+}
+#email h6{
+   margin-top: 20px;
+   margin-left: 30px;
+}
+#txtemail{
+    width: 350px;
+    margin-left: 30px;
+}
+#mobile h6{
+    margin-top: 20px;
+    margin-left: 30px;
+}
+#txtmobile{
+    width: 350px;
+    margin-left: 30px;
+}
+#btn1{
+    margin-top: 20px;
+    margin-left: 40%;
+}

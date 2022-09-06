@@ -46,5 +46,30 @@ getAllCategory(): Category[]{
    ]
   
  }
+
+
+ submit(username:any,email:any,password:any){
+
+  const data={
+      username,
+      email,
+      password
+    }
+
+  return this.http.post('https://flat-goats-enjoy-202-164-133-86.loca.lt/account/register/',data)
+ }
+
+
+login(username:any,password:any){
+
+const data={
+  username,
+  password
+}
+
+return  this.http.post('https://flat-goats-enjoy-202-164-133-86.loca.lt/account/login/',data);
+
+}
+
  
 }

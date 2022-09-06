@@ -1,0 +1,12 @@
+.main-body{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+.txt1,.txt2,.txt3,.txt4,.txt5{
+    padding-top: 10px;
+}
+.txt1 p,.txt2 p,.txt3 p,.txt4 p,.txt5 p{
+    padding-top: 5px;
+    font-size: medium;
+}
