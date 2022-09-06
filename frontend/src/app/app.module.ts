@@ -10,7 +10,6 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { FooterComponent } from './footer/footer.component';
 import { AboutusComponent } from './aboutus/aboutus.component';
 import { ReturnpolicyComponent } from './returnpolicy/returnpolicy.component';
-import { CartComponent } from './cart/cart.component';
 import { ShipdelComponent } from './shipdel/shipdel.component';
 import { MyprofileComponent } from './myprofile/myprofile.component';
 import { PlaceorderComponent } from './placeorder/placeorder.component';
@@ -37,7 +36,6 @@ import { CategoryComponent } from './category/category.component';
     FooterComponent,
     AboutusComponent,
     ReturnpolicyComponent,
-    CartComponent,
     ShipdelComponent,
     MyprofileComponent,
     PlaceorderComponent,

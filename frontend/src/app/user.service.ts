@@ -24,25 +24,25 @@ getCategory(category:string):Product[]{
 
 getAllCategory(): Category[]{
   return [
-    {name:'all',image:"../../assets/regimg.webp"},
-    {name:'food',image:"../../assets/regimg.webp"},
-    {name:'grocery',image:"../../assets/regimg.webp"},
-    {name:'household',image:"../../assets/regimg.webp"},
-    {name:'health',image:"../../assets/regimg.webp"},
+    {name:'All',image:"../../assets/regimg.webp"},
+    {name:'Food',image:"../../assets/regimg.webp"},
+    {name:'Grocery',image:"../../assets/regimg.webp"},
+    {name:'Household',image:"../../assets/regimg.webp"},
+    {name:'Health',image:"../../assets/regimg.webp"},
   ]
 }
 
 
  database():Product[]{
  return [
-    {id:1,name:"chips",categories:["all","food"],description:"good",price:200,image:"../../assets/regimg.webp"},
-    {id:1,name:"pickle",categories:["all","food"],description:"good",price:200,image:"../../assets/regimg.webp"},
-    {id:1,name:"soap",categories:["all","grocery"],description:"good",price:200,image:"../../assets/regimg.webp"},
-    {id:1,name:"handwash",categories:["all","grocery"],description:"good",price:200,image:"../../assets/regimg.webp"},
-    {id:1,name:"mat",categories:["all","household"],description:"good",price:200,image:"../../assets/regimg.webp"},
-    {id:1,name:"candle",categories:["all","household"],description:"good",price:200,image:"../../assets/regimg.webp"},
-    {id:1,name:"sanitizer",categories:["all","health"],description:"good",price:200,image:"../../assets/regimg.webp"},
-    {id:1,name:"mask",categories:["all","health"],description:"good",price:200,image:"../../assets/regimg.webp"}
+    {id:1,name:"Chips",categories:["All","Food"],description:"good",price:200,image:"../../assets/regimg.webp"},
+    {id:1,name:"Pickle",categories:["All","Food"],description:"good",price:200,image:"../../assets/regimg.webp"},
+    {id:1,name:"Soap",categories:["All","Grocery"],description:"good",price:200,image:"../../assets/regimg.webp"},
+    {id:1,name:"Handwash",categories:["All","Grocery"],description:"good",price:200,image:"../../assets/regimg.webp"},
+    {id:1,name:"Mat",categories:["All","Household"],description:"good",price:200,image:"../../assets/regimg.webp"},
+    {id:1,name:"Candle",categories:["All","Household"],description:"good",price:200,image:"../../assets/regimg.webp"},
+    {id:1,name:"Sanitizer",categories:["All","Health"],description:"good",price:200,image:"../../assets/regimg.webp"},
+    {id:1,name:"Mask",categories:["All","Health"],description:"good",price:200,image:"../../assets/regimg.webp"}
    ]
   
  }

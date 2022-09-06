@@ -15,6 +15,11 @@
 .footer-block-heading{
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: x-large;
+    margin-left: 15%;
+}
+.footer-block-heading1{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: x-large;
     margin-left: 10%;
 }
 
@@ -32,27 +37,27 @@ ul{
     list-style: none;
 }
 #phimg{
-    margin-left: -42%;
-    margin-top: 23%;
+    margin-left: -127%;
+    margin-top: 50%;
 }
 #phone{
-    margin-left: 11%;
-    margin-top: -62%;
+    margin-left: 6%;
+    margin-top: -195%;
 }
 #phone1{
     margin-left: 11%;
     margin-top: 4%;
 }
 #emimg{
-    margin-left: -42%;
-    margin-top: 18%;
+    margin-left: -127%;
+    margin-top: 71%;
 }
 #email{
-    margin-left: 17%;
-    margin-top: -61%;
+    margin-left: 32%;
+    margin-top: -195%;
 }
 #email1{
-    margin-left: 17%;
+    margin-left: 30%;
 }
 .txt{
     font-family: Georgia, 'Times New Roman', Times, serif;

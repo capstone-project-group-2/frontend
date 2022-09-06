@@ -12,6 +12,14 @@ li {
     padding-left: 20px; 
     cursor: pointer;  
 }
+li #signup{
+    color: black;
+    text-decoration: none;
+}
+li #login{
+    color: black;
+    text-decoration: none;
+}
 
 nav h3{
     
