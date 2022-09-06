@@ -30,6 +30,7 @@ import { ViewComponent } from './view/view.component';
 import { CartComponent } from './cart/cart.component';
 import { PaymentComponent } from './payment/payment.component';
 import { InvoiceComponent } from './invoice/invoice.component';
+// import { NgPrintModule } from 'ng-print';
 
 
 @NgModule({
@@ -58,9 +59,9 @@ import { InvoiceComponent } from './invoice/invoice.component';
     ViewComponent,
     CartComponent,
     PaymentComponent,
-    InvoiceComponent
+    InvoiceComponent,
+    // NgPrintModule
 
-    CategoryComponent
 
 
   ],
