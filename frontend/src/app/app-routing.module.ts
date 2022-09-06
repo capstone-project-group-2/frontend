@@ -5,6 +5,7 @@ import { WishlistComponent } from './wishlist/wishlist.component';
 import { CategoryComponent } from './category/category.component';
 import { RegisterComponent } from './register/register.component';
 import { ShopComponent } from './shop/shop.component';
+import { GeneratorModule } from './generator/generator.module';
 
 
 
@@ -15,7 +16,10 @@ const routes: Routes = [
   {path:'category',component:CategoryComponent},
   {path:'category/:category',component:ShopComponent},
   {path:'login',component:LoginComponent},
-  {path:'wishlist/:id',component:WishlistComponent}
+  {path:'wishlist/:id',component:WishlistComponent},
+  {path:'geneator',component:GeneratorModule,
+}
+
 ];
 
 @NgModule({

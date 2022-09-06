@@ -9,6 +9,7 @@ import { WishlistComponent } from './wishlist/wishlist.component';
 import { RegisterComponent } from './register/register.component';
 import { ShopComponent } from './shop/shop.component';
 import { CategoryComponent } from './category/category.component';
+import { GeneratorModule } from './generator/generator.module';
 
 
 @NgModule({
@@ -24,7 +25,8 @@ import { CategoryComponent } from './category/category.component';
     BrowserModule,
     AppRoutingModule,
     ReactiveFormsModule,
-    HttpClientModule
+    HttpClientModule,
+    GeneratorModule
   ],
   providers: [],
   bootstrap: [AppComponent]

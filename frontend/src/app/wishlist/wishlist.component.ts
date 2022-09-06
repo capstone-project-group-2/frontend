@@ -11,22 +11,32 @@ import { WishService } from '../wish.service';
   styleUrls: ['./wishlist.component.css']
 })
 export class WishlistComponent implements OnInit {
-  product!:Product
+  // product!:Product
+  public product:any=[];
 
 
 
-  constructor(private ds:UserService,private router:Router,private wishlist:WishService,private route:ActivatedRoute ) {
-    route.params.subscribe((params)=>{
-      this.product=ds.getProductById(params['id'])
-    })
+  constructor(private ds:UserService,private router:Router,private wishlist:WishService,private route:ActivatedRoute ) {}
+    // route.params.subscribe((params)=>{
+    //   this.product=ds.getProductById(params['id'])
+    // })
+
   
-   }
+   
 
 
 
   ngOnInit(): void {
+    this.wishlist.getproducts()
+    .subscribe(res=>{
+      this.product = res;
+
+      // this.grandtotal = this.cart2.gettotalprice();
+    })
   }
-  cart(){
-    
+
+  removeWishListItem(item:any){
+    this.wishlist.removewishitem(item);
   }
-}
+  }
+

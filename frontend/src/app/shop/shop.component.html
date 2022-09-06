@@ -2,7 +2,8 @@
 
 <div class="row">
     <div class="card col-md-3" *ngFor='let item of product'>
-      <img src="../../assets/heart.png" alt="" style="height:30px;width:30px" class="img2" routerLink="/wishlist/{{item.id}}">
+      <!-- <i class="fas fa-heart"></i> -->
+      <img src="../../assets/heart.png" alt="" style="height:30px;width:30px" class="img2" routerLink="/wishlist/{{item.id}}"(click)="addtowishlist(item)">
 
         <img src="{{item.image}}" class=" img card-img-top"  >
         <!-- <i class=" heart fa-regular fa-heart"></i> -->
