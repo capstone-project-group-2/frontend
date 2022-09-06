@@ -43,11 +43,7 @@ export class CartComponent implements OnInit {
 
   click(){
     this.router.navigateByUrl("/payment")
-
-  constructor() { }
-
-  ngOnInit(): void {
-
   }
+
 
 }

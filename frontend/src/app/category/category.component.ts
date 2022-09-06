@@ -16,7 +16,8 @@ export class CategoryComponent implements OnInit {
   category?:Category[]=[];
 
 
-  constructor(private ds:UserService) { }
+  // constructor(private ds:UserService) { }
+  constructor(private ds:UserService) {}
 
   ngOnInit(): void {
     if(!this.itemCategory)

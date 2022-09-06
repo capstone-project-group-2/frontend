@@ -48,9 +48,28 @@ getAllCategory(): Category[]{
  }
 
 
- submit(data:any){
-  return this.http.post<any>('https://6649-202-164-133-86.in.ngrok.io/account/register/',data)
+ submit(username:any,email:any,password:any){
+
+  const data={
+      username,
+      email,
+      password
+    }
+
+  return this.http.post('https://flat-goats-enjoy-202-164-133-86.loca.lt/account/register/',data)
  }
+
+
+login(username:any,password:any){
+
+const data={
+  username,
+  password
+}
+
+return  this.http.post('https://flat-goats-enjoy-202-164-133-86.loca.lt/account/login/',data);
+
+}
 
  
 }
