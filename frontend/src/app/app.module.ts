@@ -30,8 +30,7 @@ import { CartComponent } from './cart/cart.component';
 import { PaymentComponent } from './payment/payment.component';
 import { InvoiceComponent } from './invoice/invoice.component';
 import { ReactiveFormsModule } from '@angular/forms';
-// import { NgPrintModule } from 'ng-print';
-
+import {NgPrintModule} from 'ng-print';
 
 @NgModule({
   declarations: [
@@ -60,7 +59,6 @@ import { ReactiveFormsModule } from '@angular/forms';
     CartComponent,
     PaymentComponent,
     InvoiceComponent,
-    // NgPrintModule
 
 
 
@@ -68,6 +66,7 @@ import { ReactiveFormsModule } from '@angular/forms';
   imports: [
     BrowserModule,
     AppRoutingModule,
+    
 
     // NgbModule,
 
@@ -75,6 +74,7 @@ import { ReactiveFormsModule } from '@angular/forms';
     GeneratorModule,
 
     HttpClientModule,
+    NgPrintModule
     
 
 
