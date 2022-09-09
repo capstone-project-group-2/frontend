@@ -3,7 +3,6 @@
     border: 2px solid;
     width: 500px;
     border-radius: 20px;
-    margin-top: 50px;
     margin-left: 30px;
 }
 .button{
@@ -17,9 +16,12 @@ body{
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    position: fixed;
+    /* position: fixed; */
     height: 712px;
     width: 100%;
+}
+.main details{
+    margin-top: 20px;
 }
 h1{
     color: aliceblue;

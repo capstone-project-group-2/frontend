@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
-import { render } from 'creditcardpayments/creditCardPayments'
+import {render} from 'creditcardpayments/creditcardpayments';
 import { PayService } from '../pay.service';
 
 @Component({
@@ -20,7 +20,7 @@ export class PaymentComponent implements OnInit {
         id: "#buttons",
         currency: "USD",
         value: "1000",
-        onApprove: (details) => {
+        onApprove: (details:any) => {
           console.log("details",details);
           // alert("success")
           this.userDetails = details;

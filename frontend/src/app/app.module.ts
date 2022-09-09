@@ -4,7 +4,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
 import { HomeComponent } from './home/home.component';
-// import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { FooterComponent } from './footer/footer.component';
 import { AboutusComponent } from './aboutus/aboutus.component';
 import { ReturnpolicyComponent } from './returnpolicy/returnpolicy.component';
@@ -37,6 +37,9 @@ import { ReactiveFormsModule } from '@angular/forms';
   declarations: [
     AppComponent,
 
+
+
+
     HeaderComponent,
     HomeComponent,
     FooterComponent,
@@ -50,10 +53,15 @@ import { ReactiveFormsModule } from '@angular/forms';
     OrderhistoryComponent,
     GalleryComponent,
 
+
+
     LoginComponent,
     WishlistComponent,
     RegisterComponent,
     ShopComponent,
+
+
+
 
     CategoryComponent,
     ViewComponent,
@@ -64,18 +72,25 @@ import { ReactiveFormsModule } from '@angular/forms';
 
 
 
+
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
 
+    NgbModule,
+    ReactiveFormsModule,
+    HttpClientModule,
+
+
     // NgbModule,
 
-    ReactiveFormsModule,
+
     GeneratorModule,
 
     HttpClientModule,
     
+
 
 
   ],
