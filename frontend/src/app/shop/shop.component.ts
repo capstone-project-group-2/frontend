@@ -18,17 +18,21 @@ export class ShopComponent implements OnInit {
 
   ngOnInit(): void {
 
+    this.ds.getData().subscribe((res)=>{
+      this.product=res;
+    })
+
     // this.alldata = this.ds.getData()
     //  console.log(this.alldata);
        
-    this.route.params.subscribe(params=>{
-      if(params['searchItem'])
-      this.product = this.ds.database().filter(product=>product.name.toLowerCase().includes(params['searchItem'].toLowerCase()));
-      else if(params['category'])
-      this.product = this.ds.getCategory(params['category'])
-      else
-      this.product = this.ds.database();
-    })
+    // this.route.params.subscribe(params=>{
+    //   if(params['searchItem'])
+    //   this.product = this.ds.database().filter(product=>product.name.toLowerCase().includes(params['searchItem'].toLowerCase()));
+    //   else if(params['category'])
+    //   this.product = this.ds.getCategory(params['category'])
+    //   else
+    //   this.product = this.ds.database();
+    // })
 
 
   }
