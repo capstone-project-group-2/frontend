@@ -55,24 +55,16 @@ const routes: Routes = [
   {path:'view/:id',component:ViewComponent},
   {path:'cart',component:CartComponent},
   {path:'payment',component:PaymentComponent},
-  {path:'invoice',component:InvoiceComponent}
+  {path:'invoice',component:InvoiceComponent},
+
+  {
+    path:'generator',loadChildren:()=>import('./generator/generator.module').then(m=>m.GeneratorModule)
+  }
 
 ];
 
 
-
-
-
   
-
-
-
-
-  
-
-
-
-
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],

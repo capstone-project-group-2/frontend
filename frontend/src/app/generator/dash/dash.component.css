@@ -1,0 +1,19 @@
+.main{
+    margin-left: 300px;
+    
+ }
+ .btn{
+     width: 100px;
+     padding-top: 10px;
+ }
+ .card{
+    background-color: rgb(207, 245, 245);
+    width: 300px;
+    padding: 10px;
+
+ }
+ .sub{
+    padding-top: 20px;
+    
+    display: flex;
+ }

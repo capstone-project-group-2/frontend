@@ -11,7 +11,7 @@ export class CategoryComponent implements OnInit {
 
   @Input()
 
-
+ 
   itemCategory?:string[];
   category?:Category[]=[];
 
@@ -23,6 +23,10 @@ export class CategoryComponent implements OnInit {
     if(!this.itemCategory)
     this.category= this.ds.getAllCategory()
     console.log("category",this.category);
+
+    // this.ds.getCat().subscribe((res)=>{
+    //   this.cat=res;
+    // })
     
   }
 
