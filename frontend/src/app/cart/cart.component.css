@@ -5,13 +5,14 @@
     width: 100%;
 }
 .image img{
-    height: 100px;
-    width: 100px;
+    height: 150px;
+    width: 150px;
     border-radius: 10px;
 }
 .cont{
     margin-left: 250px;
-    margin-top: -105px;
+    margin-top: -150px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
 .row{
     display: flex;
@@ -30,12 +31,12 @@
 }
 .remove{
     margin-top: 10px;
-    margin-left: 300px;
+    margin-left: 150px;
 }
 .order{
     border: solid;
     margin-left: 960px;
-    margin-top: -200px;
+    margin-top: -220px;
     width: 315px;
     height: 323px;
     padding-left: 104px;
@@ -45,7 +46,7 @@
 
 }
 .placebtn{
-    margin-top: 60px;
+    margin-top: 20px;
     width: 200px;
     margin-left: 10px;
    
@@ -53,4 +54,8 @@
 #sticky{
     position:fixed;
     top:350px;
+}
+.order label{
+    margin-top: 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
