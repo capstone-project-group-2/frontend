@@ -1,6 +1,6 @@
 
 
-<div *ngIf="category">
+<div class="category" *ngIf="category">
     <a *ngFor="let item of category" routerLink="/category/{{item.name}}">{{item.name}} <br><img src="{{item.image}}" alt=""></a>
    </div>  
  

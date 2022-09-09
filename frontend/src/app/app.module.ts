@@ -30,6 +30,7 @@ import { CartComponent } from './cart/cart.component';
 import { PaymentComponent } from './payment/payment.component';
 import { InvoiceComponent } from './invoice/invoice.component';
 import { ReactiveFormsModule } from '@angular/forms';
+import {NgxPrintModule}  from 'ngx-print'
 // import { NgPrintModule } from 'ng-print';
 
 
@@ -81,6 +82,7 @@ import { ReactiveFormsModule } from '@angular/forms';
     NgbModule,
     ReactiveFormsModule,
     HttpClientModule,
+    NgxPrintModule,
 
 
     // NgbModule,
