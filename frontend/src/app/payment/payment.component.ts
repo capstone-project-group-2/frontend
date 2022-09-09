@@ -20,7 +20,11 @@ export class PaymentComponent implements OnInit {
         id: "#buttons",
         currency: "USD",
         value: "1000",
+<<<<<<< HEAD
+        onApprove:(details:any) => {
+=======
         onApprove: (details:any) => {
+>>>>>>> ea177c8bb5aed163e53729187201753b91fc3df2
           console.log("details",details);
           // alert("success")
           this.userDetails = details;
