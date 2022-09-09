@@ -12,6 +12,14 @@ li {
     padding-left: 20px; 
     cursor: pointer;  
 }
+li #signup{
+    color: black;
+    text-decoration: none;
+}
+li #login{
+    color: black;
+    text-decoration: none;
+}
 
 nav h3{
     
@@ -80,6 +88,9 @@ nav h5 {
     transform: scale(1.25);
     transition: 0.5s;   
 }
+/* #wishlist{
+    color: black;
+} */
 
 
 

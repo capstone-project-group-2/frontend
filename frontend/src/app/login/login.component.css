@@ -8,7 +8,7 @@ body{
     background-position: center;
     height: 670px;
     width: 100%;
-    position: fixed;
+    /* position: fixed; */
     background-repeat: no-repeat;
 
     }
@@ -52,6 +52,7 @@ body{
         
         .input-group-prepend span{
         width: 50px;
+        height: 38px;
         background-color:white;
         color: black;
         border:0 !important;
