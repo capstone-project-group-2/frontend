@@ -15,7 +15,12 @@ export class UserService {
   }
 
 getData(){
- return<any>(this.database)
+ return this.http.get<any>('https://four-clowns-occur-202-164-133-86.loca.lt/product/product/')
+}
+
+getCat(){
+ return this.http.get<any>('https://four-clowns-occur-202-164-133-86.loca.lt/product/category/')
+
 }
 
 getCategory(category:string):Product[]{

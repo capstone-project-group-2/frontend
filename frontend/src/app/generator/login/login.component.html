@@ -1,1 +1,25 @@
-<p>login works!</p>
+<body>
+    <form [formGroup]="reportLogin">
+        <div class="main">
+            <div class="details">
+                <h1>Log In</h1>
+                <div>
+                   <input type="text" placeholder="User Name" class="form-control" formControlName="username">
+                   <div *ngIf="(this.reportLogin.get('uname')?.touched||this.reportLogin.get('uname')?.dirty)&&this.reportLogin.get('uname')?.errors"
+                   style="color: red;">Invalid</div><br><br>
+                  
+                </div>
+             
+                <div>
+                    <input type="text" placeholder="Password" class="form-control" formControlName="password">
+                    <div *ngIf="(this.reportLogin.get('password')?.touched||this.reportLogin.get('password')?.dirty)&&this.reportLogin.get('password')?.errors"
+                    style="color: red;">Invalid</div><br><br>
+                </div>
+               
+                
+                <button class="button" (click)="log()" routerLink="/dashboard">Submit</button>
+            </div>
+        </div>
+    </form>
+</body>
+<!-- <img src="../../../assets/pickles.jpg" alt=""> -->
