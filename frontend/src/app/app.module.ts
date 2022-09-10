@@ -26,10 +26,16 @@ import { GeneratorModule } from './generator/generator.module';
 
 import { CategoryComponent } from './category/category.component';
 import { ViewComponent } from './view/view.component';
-import { CartComponent } from './cart/cart.component';
+// import { CartComponent } from './cart/cart.component';
 import { PaymentComponent } from './payment/payment.component';
 import { InvoiceComponent } from './invoice/invoice.component';
 import { ReactiveFormsModule } from '@angular/forms';
+
+import { CartComponent } from './cart/cart.component';
+// import { NgPrintModule } from 'ng-print';
+
+
+
 
 @NgModule({
   declarations: [
@@ -63,9 +69,14 @@ import { ReactiveFormsModule } from '@angular/forms';
 
     CategoryComponent,
     ViewComponent,
-    CartComponent,
+   
     PaymentComponent,
     InvoiceComponent,
+
+    CartComponent,
+    // NgPrintModule
+
+
 
 
 
