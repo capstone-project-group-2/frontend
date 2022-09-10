@@ -1,38 +1,36 @@
 
-<div *ngIf="cart && cart.items.length > 0" class="container">
-    <ul>
-        <li *ngFor="let cartItem of cart.items" class="list">
-            <div class="row">
-                <div class="image">
-                    <img [src]="cartItem.product.image" alt="">
-                </div>
-                <div class="cont">
-                    <h2>{{cartItem.product.name}}</h2>
-                    <p>{{cartItem.product.description}}</p>
-                    <h6>Price:{{cartItem.product.price}}</h6>
-                    <label>Qty</label>&nbsp;&nbsp;&nbsp;
-                    <select #quantitySelect name="" id="" (change)="changeQuantity(cartItem,quantitySelect.value)">
-                        <option value="">1</option>
-                        <option value="">2</option>
-                        <option value="">3</option>
-                        <option value="">4</option>
-                        <option value="">5</option>
-                    </select>
-                        <button class="remove"(click)="removeFromCart(cartItem)">Remove</button>
-                </div>
-                
-            </div>
-        </li>
-    </ul>
+<div *ngFor="let item of products,let i=index" class="container">
+  <ul>
+      <li  class="list">
+          <div class="row">
+              <div class="image">
+                  <img src="{{item.image}}" alt="">
+              </div>
+              <div class="cont">
+                  <h2>{{item.name}}</h2>
+                  <p>{{item.description}}</p>
+                  <h6>Price:{{item.price}}</h6>
+                  <label>Qty</label>&nbsp;&nbsp;&nbsp;
+                  <select #quantitySelect name="" id="" >
+                      <option value="1">1</option>
+                      <option value="2">2</option>
+                      <option value="3">3</option>
+                      <option value="4">4</option>
+                      <option value="5">5</option>
+                  </select>
+                      <button class="remove" (click)="remove(item)">Remove</button>
+              </div>
+              
+          </div>
+      </li>
+  </ul>
 
 
 </div>
 <div class="order" id="sticky">
-    <label for="">Total Item:{{cart.items.length}}</label><br><br>
+  <label for="">Total Item:</label><br><br>
 
-    <label for="">Total Price:{{cart.totalPrice}}</label><br><br><br>
+  <label for="">Total Price:</label><br><br><br>
 
-    <button class="placebtn" (click)="click()">Place Order</button>
-</div>
-
-
+  <button class="placebtn" >Place Order</button>
+</div> 

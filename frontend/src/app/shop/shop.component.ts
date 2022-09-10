@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
+import { CartService } from '../cart.service';
 import { Product } from '../model/product';
 import { UserService } from '../user.service';
 import { WishService } from '../wish.service';
@@ -12,14 +13,17 @@ import { WishlistComponent } from '../wishlist/wishlist.component';
 })
 export class ShopComponent implements OnInit {
 
-  product:Product[]=[]
-
-  constructor(private ds:UserService,private route:ActivatedRoute,private router:Router,private wish:WishService) { }
+  // product:Product[]=[]
+  product:any=[];
+  constructor(private ds:UserService,private route:ActivatedRoute,private router:Router,private wish:WishService,private cs:CartService) { }
 
   ngOnInit(): void {
 
+    
+
     this.ds.getData().subscribe((res)=>{
       this.product=res;
+      console.log("shop",res)
     })
 
     // this.alldata = this.ds.getData()
@@ -39,6 +43,11 @@ export class ShopComponent implements OnInit {
   addtowishlist(item:any){
     this.wish.addtowishlist(item);
 
+  }
+
+  addToCart(item:any){
+     this.cs.addToCart(item)
+     this.router.navigateByUrl("/cart")
   }
 
 
