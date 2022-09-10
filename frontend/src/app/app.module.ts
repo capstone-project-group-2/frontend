@@ -95,7 +95,7 @@ import { CartComponent } from './cart/cart.component';
     // NgbModule,
 
 
-    GeneratorModule,
+    // GeneratorModule,
 
     HttpClientModule,
     

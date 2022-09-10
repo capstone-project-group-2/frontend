@@ -15,7 +15,7 @@ export class UserService {
   }
 
 getData(){
- return this.http.get<any>('https://yummy-stars-crash-103-85-207-188.loca.lt/product/product/')
+ return this.http.get<any>('https://febinmicheal.pythonanywhere.com/product/product/')
 }
 
 getCat(){

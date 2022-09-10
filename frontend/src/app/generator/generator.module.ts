@@ -10,6 +10,7 @@ import { AllproductComponent } from './allproduct/allproduct.component';
 import { AlluserComponent } from './alluser/alluser.component';
 import { AllcatComponent } from './allcat/allcat.component';
 import { AllorderComponent } from './allorder/allorder.component';
+import { HttpClientModule } from '@angular/common/http';
 
 
 
@@ -28,7 +29,8 @@ import { AllorderComponent } from './allorder/allorder.component';
   imports: [
     CommonModule,
     GeneratorRoutingModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    HttpClientModule
   ]
 })
 export class GeneratorModule { 

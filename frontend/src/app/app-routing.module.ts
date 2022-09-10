@@ -55,7 +55,7 @@ const routes: Routes = [
   {path:'view/:id',component:ViewComponent},
   {path:'cart',component:CartComponent},
   {path:'payment',component:PaymentComponent},
-
+  {path:'view',component:ViewComponent},
 
 
   {path:'invoice',component:InvoiceComponent},

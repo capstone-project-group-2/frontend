@@ -50,6 +50,9 @@ export class ShopComponent implements OnInit {
      this.router.navigateByUrl("/cart")
   }
 
-
+view(item:any){
+  this.cs.getViewData(item)
+  this.router.navigateByUrl("/view")
+}
 
 }
