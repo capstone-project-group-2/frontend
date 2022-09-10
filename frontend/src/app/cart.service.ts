@@ -26,6 +26,11 @@ export class CartService {
     return this.productData.asObservable()
   }
 
+  getViewData(product:any){
+     this.cartData=product
+     this.productData.next(this.cartData)
+  }
+
   setData(product:any){
     this.cartData.push(...product)
     this.productData.next(product)

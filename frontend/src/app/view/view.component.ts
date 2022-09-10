@@ -11,21 +11,28 @@ import { UserService } from '../user.service';
 })
 export class ViewComponent implements OnInit {
 
-  product!:Product
+  viewData:any=[];
+
+  // product!:Product
 
   constructor(private router:Router,private ds:UserService,private route: ActivatedRoute,private cs:CartService) { 
-    route.params.subscribe((params)=>{
-      this.product = ds.getProductById(params['id'])
-    })
+    // route.params.subscribe((params)=>{
+    //   this.product = ds.getProductById(params['id'])
+    // })
   }
 
   ngOnInit(): void {
+    this.cs.getData().subscribe((res)=>{
+    this.viewData.push(res)
+    console.log(this.viewData);
+    
+    })
   }
 
-  cart(){
-    this.cs.addToCart(this.product)
-    this.router.navigateByUrl('/cart')
-  }
+  // cart(){
+  //   this.cs.addToCart(this.product)
+  //   this.router.navigateByUrl('/cart')
+  // }
 
 
 }

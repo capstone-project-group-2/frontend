@@ -6,7 +6,7 @@
     <img src="../../assets/love1.png" alt="" style="height:30px;width:30px" class="img2"
       routerLink="/wishlist/{{item.id}}" (click)="addtowishlist(item)">
 
-    <img src="{{item.image}}" class=" img card-img-top">
+    <img src="{{item.image}}" class=" img card-img-top" (click)="view(item)">
 
     <div class="card-body">
       <h4>{{item.name}}</h4>
