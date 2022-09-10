@@ -57,21 +57,22 @@ const routes: Routes = [
   {path:'payment',component:PaymentComponent},
 
 
-  // {
-  //   path:'',redirectTo:'home',pathMatch:'full'
 
-  // },
+  {path:'invoice',component:InvoiceComponent},
+
+
   {
     path:'generator',loadChildren:()=>import('./generator/generator.module').then(m=>m.GeneratorModule)
+
   },
 
-  {path:'invoice',component:InvoiceComponent}
+  
+
+
+
 
 
 ];
-
-
-
 
 
   
