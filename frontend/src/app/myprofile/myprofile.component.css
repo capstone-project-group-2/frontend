@@ -10,6 +10,7 @@
     margin-left: 20px;
     border-radius: 0;
     font-family: Georgia, 'Times New Roman', Times, serif;
+    cursor: pointer;
 }
 #card1{
     margin-top: 0;

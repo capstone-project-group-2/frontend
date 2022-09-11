@@ -29,7 +29,9 @@ import { ViewComponent } from './view/view.component';
 // import { CartComponent } from './cart/cart.component';
 import { PaymentComponent } from './payment/payment.component';
 import { InvoiceComponent } from './invoice/invoice.component';
-import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { ReactiveFormsModule } from '@angular/forms';
+import {NgxPrintModule}  from 'ngx-print';
+import { FormsModule } from '@angular/forms';
 
 import { CartComponent } from './cart/cart.component';
 // import { NgPrintModule } from 'ng-print';
@@ -69,6 +71,7 @@ import { CartComponent } from './cart/cart.component';
 
     CategoryComponent,
     ViewComponent,
+    // CartComponent,
    
     PaymentComponent,
     InvoiceComponent,
@@ -90,6 +93,7 @@ import { CartComponent } from './cart/cart.component';
     NgbModule,
     ReactiveFormsModule,
     HttpClientModule,
+    NgxPrintModule,
 
 
     // NgbModule,
