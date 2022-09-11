@@ -7,10 +7,11 @@ import { CartService } from '../cart.service';
   styleUrls: ['./cart.component.css']
 })
 export class CartComponent implements OnInit {
-
+  quantity:any;
   products:any=[];
   allproducts:any=0;
-
+  total:any;
+  alltotal:any=0;
   constructor(private cs:CartService) { }
 
   ngOnInit(): void {
@@ -25,6 +26,13 @@ export class CartComponent implements OnInit {
      alert("removed")
   }
 
+  change(i:any){
+    console.log(this.quantity)
+   this.total= this.products[i].price*this.quantity
+   console.log(this.total);
+   this.alltotal=this.alltotal+this.total
+   console.log(this.alltotal)
+  }
 
 
 }

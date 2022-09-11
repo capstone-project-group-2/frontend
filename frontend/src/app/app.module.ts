@@ -29,7 +29,7 @@ import { ViewComponent } from './view/view.component';
 // import { CartComponent } from './cart/cart.component';
 import { PaymentComponent } from './payment/payment.component';
 import { InvoiceComponent } from './invoice/invoice.component';
-import { ReactiveFormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 import { CartComponent } from './cart/cart.component';
 // import { NgPrintModule } from 'ng-print';
@@ -98,7 +98,7 @@ import { CartComponent } from './cart/cart.component';
     // GeneratorModule,
 
     HttpClientModule,
-    
+    FormsModule
 
 
 
