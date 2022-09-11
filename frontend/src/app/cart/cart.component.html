@@ -1,0 +1,36 @@
+
+<div *ngFor="let item of products,let i=index" class="container">
+  <ul>
+      <li  class="list">
+          <div class="row">
+              <div class="image">
+                  <img src="{{item.image}}" alt="">
+              </div>
+              <div class="cont">
+                  <h2>{{item.name}}</h2>
+                  <p>{{item.description}}</p>
+                  <h6>Price:{{item.price}}</h6>
+                  <label>Qty</label>&nbsp;&nbsp;&nbsp;
+                  <select #quantitySelect name="" id="" (change)="change(i)" [(ngModel)]="quantity">
+                      <option value="1">1</option>
+                      <option value="2">2</option>
+                      <option value="3">3</option>
+                      <option value="4">4</option>
+                      <option value="5">5</option>
+                  </select>
+                      <button class="remove" (click)="remove(item)">Remove</button>
+              </div>
+              
+          </div>
+      </li>
+  </ul>
+
+
+</div>
+<div class="order" id="sticky">
+  <label for="">Total Item:{{products.length}}</label><br><br>
+
+  <label for="">Total Price:{{alltotal}}</label><br><br><br>
+
+  <button class="placebtn" routerLink="/payment" >Place Order</button>
+</div> 

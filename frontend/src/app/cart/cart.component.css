@@ -1,0 +1,67 @@
+ .image{
+    margin-top: 30px;
+    height: max-content;
+    width: 100%;
+  }
+  .image img{
+    height: 150px;
+    width: 150px;
+    border-radius: 10px;
+  }
+  .cont{
+    margin-left: 250px;
+    margin-top: -150px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+   
+  }
+  p{
+    width: 60%;
+  }
+ 
+  .row{
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .container{
+    margin-left: 50px;
+    margin-top: 50px;
+    border: solid;
+    height:auto;
+    width:800px ;
+  }
+  .list{
+    list-style: none;
+  }
+  .remove{
+    margin-top: 10px;
+    margin-left: 150px;
+    cursor: pointer;
+  }
+  .order{
+    border: solid;
+    margin-left: 960px;
+    margin-top: -220px;
+    width: 315px;
+    height: 323px;
+    padding-left: 104px;
+    padding: 50px;
+    position: absolute;
+    top: 10px;
+  
+  }
+  .placebtn{
+    margin-top: 20px;
+    width: 200px;
+    margin-left: 10px;
+   
+  }
+  #sticky{
+    position:fixed;
+    top:350px;
+  }
+  .order label{
+    margin-top: 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+  } 
+  

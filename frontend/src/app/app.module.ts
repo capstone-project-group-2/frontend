@@ -30,8 +30,13 @@ import { ViewComponent } from './view/view.component';
 import { PaymentComponent } from './payment/payment.component';
 import { InvoiceComponent } from './invoice/invoice.component';
 import { ReactiveFormsModule } from '@angular/forms';
-import {NgxPrintModule}  from 'ngx-print'
+import {NgxPrintModule}  from 'ngx-print';
+import { FormsModule } from '@angular/forms';
+
+import { CartComponent } from './cart/cart.component';
 // import { NgPrintModule } from 'ng-print';
+
+
 
 
 @NgModule({
@@ -67,9 +72,14 @@ import {NgxPrintModule}  from 'ngx-print'
     CategoryComponent,
     ViewComponent,
     // CartComponent,
+   
     PaymentComponent,
     InvoiceComponent,
+
+    CartComponent,
     // NgPrintModule
+
+
 
 
 
@@ -78,6 +88,7 @@ import {NgxPrintModule}  from 'ngx-print'
   imports: [
     BrowserModule,
     AppRoutingModule,
+    
 
     NgbModule,
     ReactiveFormsModule,
@@ -88,10 +99,10 @@ import {NgxPrintModule}  from 'ngx-print'
     // NgbModule,
 
 
-    GeneratorModule,
+    // GeneratorModule,
 
     HttpClientModule,
-    
+    FormsModule
 
 
 

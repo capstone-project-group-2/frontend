@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { GeneratorService } from '../generator.service';
 
 @Component({
   selector: 'app-allproduct',
@@ -7,9 +8,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AllproductComponent implements OnInit {
 
-  constructor() { }
+  getdata:any=[];
+
+  constructor(private gs:GeneratorService) { }
 
   ngOnInit(): void {
+     this.gs.getProduct().subscribe((res)=>{
+      this.getdata=res;
+      console.log("allpro",res);
+      
+     })
   }
 
 }

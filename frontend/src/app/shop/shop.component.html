@@ -1,19 +1,26 @@
-
 <!-- <app-category></app-category> -->
 
 <div class="row">
-    <div class="card crd1 col-md-3" *ngFor='let item of product'>
-      <!-- <i class="fas fa-heart"></i> -->
-      <img src="../../assets/love1.png" alt="" style="height:30px;width:30px" class="img2" routerLink="/wishlist/{{item.id}}"(click)="addtowishlist(item)">
+  <div class="card crd1 col-md-3" *ngFor='let item of product'>
+    <!-- <i class="fas fa-heart"></i> -->
+    <img src="../../assets/love1.png" alt="" style="height:30px;width:30px" class="img2"
+      routerLink="/wishlist/{{item.id}}" (click)="addtowishlist(item)">
 
-        <img src="{{item.image}}" class=" img card-img-top" routerLink="/view/{{item.id}}" >
-       
-        <div class="card-body">
-          <h4>{{item.name}}</h4>
-          <!-- <star-rating [value]="item.star" [totalstar]="5" ckeckedcolor="Yellow" uncheckedcolor="red" size="20px"></star-rating> -->
-          <h6>Price:{{item.price}}</h6>
-          <p class="card-text">{{item.description}}</p>
-          <!-- <button class="btn btn-primary">Buy NOw</button> -->
-        </div>
-      </div>
+    <img src="{{item.image}}" class=" img card-img-top" (click)="view(item)">
+
+    <div class="card-body">
+      <h4>{{item.name}}</h4>
+      <!-- <star-rating [value]="item.star" [totalstar]="5" ckeckedcolor="Yellow" uncheckedcolor="red" size="20px"></star-rating> -->
+      <h6>Price:{{item.price}}</h6>
+      <p class="card-text">{{item.description}}</p>
+      <!-- <button class="btn btn-primary">Buy NOw</button> -->
     </div>
+    <div>
+      <button (click)="addToCart(item)">Add To Cart</button>
+    </div>
+  </div>
+
+
+</div>
+
+

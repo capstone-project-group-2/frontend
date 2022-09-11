@@ -31,7 +31,7 @@ export class WishlistComponent implements OnInit {
     .subscribe(res=>{
       this.product = res;
 
-      // this.grandtotal = this.cart2.gettotalprice();
+    // this.grandtotal = this.cart2.gettotalprice();
     })
   }
 

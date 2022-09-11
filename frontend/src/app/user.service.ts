@@ -15,7 +15,7 @@ export class UserService {
   }
 
 getData(){
- return this.http.get<any>('https://four-clowns-occur-202-164-133-86.loca.lt/product/product/')
+ return this.http.get<any>('https://febinmicheal.pythonanywhere.com/product/product/')
 }
 
 getCat(){
@@ -63,7 +63,7 @@ getAllCategory(): Category[]{
       password
     }
 
-  return this.http.post('https://flat-goats-enjoy-202-164-133-86.loca.lt/account/register/',data)
+  return this.http.post('https://ninety-ends-begin-103-165-20-21.loca.lt/account/register/',data)
  }
 
 
@@ -74,7 +74,7 @@ const data={
   password
 }
 
-return  this.http.post('https://flat-goats-enjoy-202-164-133-86.loca.lt/account/login/',data);
+return  this.http.post('https://ninety-ends-begin-103-165-20-21.loca.lt/account/login/',data);
 
 }
 

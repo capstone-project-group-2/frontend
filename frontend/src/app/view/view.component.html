@@ -1,17 +1,17 @@
 <app-header></app-header>
 <div class="container">
-    <div *ngIf="product">
+    <div *ngFor="let item of viewData">
         <div class="image">
-        <img src="{{product.image}}" >
+        <img src="{{item.image}}" >
         </div>
         <div class="cont">
-        <h1>{{product.name}}</h1>
-        <h5>{{product.description}}</h5>
-        <h5>Price:{{product.price}}</h5>
+        <h1>{{item.name}}</h1>
+        <h5>{{item.description}}</h5>
+        <h5>Price:{{item.price}}</h5>
        
-      <!-- <img src="../../assets/" alt=""> -->
+    <!-- <img src="../../assets/" alt=""> -->
        </div>
-      <button id="btn1" class="btn btn-primary" (click)="cart()">Add to Cart</button>
+      <!-- <button id="btn1" class="btn btn-primary" (click)="cart()">Add to Cart</button> -->
       <button routerLink="/shop" id="btn2" class="btn btn-primary">Back</button>
        
 
