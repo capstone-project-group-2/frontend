@@ -12,7 +12,12 @@
     margin-left: 250px;
     margin-top: -150px;
     font-family: Georgia, 'Times New Roman', Times, serif;
+   
   }
+  p{
+    width: 60%;
+  }
+ 
   .row{
     display: flex;
     justify-content: space-between;

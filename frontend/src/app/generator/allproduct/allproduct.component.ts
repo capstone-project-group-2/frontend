@@ -15,6 +15,8 @@ export class AllproductComponent implements OnInit {
   ngOnInit(): void {
      this.gs.getProduct().subscribe((res)=>{
       this.getdata=res;
+      console.log("allpro",res);
+      
      })
   }
 

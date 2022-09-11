@@ -11,7 +11,7 @@
                   <p>{{item.description}}</p>
                   <h6>Price:{{item.price}}</h6>
                   <label>Qty</label>&nbsp;&nbsp;&nbsp;
-                  <select #quantitySelect name="" id="" >
+                  <select #quantitySelect name="" id="" (change)="change(i)" [(ngModel)]="quantity">
                       <option value="1">1</option>
                       <option value="2">2</option>
                       <option value="3">3</option>
@@ -28,9 +28,9 @@
 
 </div>
 <div class="order" id="sticky">
-  <label for="">Total Item:</label><br><br>
+  <label for="">Total Item:{{products.length}}</label><br><br>
 
-  <label for="">Total Price:</label><br><br><br>
+  <label for="">Total Price:{{alltotal}}</label><br><br><br>
 
-  <button class="placebtn" >Place Order</button>
+  <button class="placebtn" routerLink="/payment" >Place Order</button>
 </div> 
