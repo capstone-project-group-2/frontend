@@ -1,31 +1,59 @@
-<div >
-    <h6>From</h6>
-    <p></p>
-
-    <h6>To</h6>
+<app-header></app-header>
+<div id="section">
+  <div id="details">
+    <div id="from">
+    <h6>From :</h6>
+    <p>E-sakhi</p>
+    <p>Kakkanad</p>
+    <p>Ernamkulam </p>
+    <p>Pin : 682314</p>
+    </div>
+    
+    <div id="to">
+    <h6>To :</h6>
     <p>{{username}}</p>
     <p>{{street1}}</p>
     <p>{{street2}}</p>
     <p>{{area1}}</p>
     <p>{{pincode}}</p>
-
-</div>
-<!-- <div>
-    <h6>Invoice Date: {{date}}</h6>
-</div>
-<div><h6>Status: {{status}}</h6>
-</div>
-
-<table>
-  <tr>
+    </div>
     
+
+  </div>
+  <div id="date">
+    <h6>Invoice Date: {{date}}</h6>
+  </div>
+  <div id="status">
+    <h6>Status: {{status}}</h6>
+    <!-- <p>{{invoicetot}}</p> -->
+  </div>
+
+  <table id="tbl0" >
+    <thead id="tbl">
+      <tr>
         <th>Sl No</th>
         <th>Item Name</th>
         <th>Item Quantity</th>
         <th>Item Price</th>
         <th>Total</th>
-   
-  </tr>
-</table> -->
+      </tr>
+    </thead>
+    <tbody id="tbl2">
+      <tr *ngFor="let item of invoicedata; let i=index">
+        <td>{{i+1}}</td>
+        <td >{{item.name}}</td>
+        <td >{{invoicequt}}</td>
+        <td >{{item.price}}</td>
+        <td >{{invoicetot}}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
 
-<div><button class="btn btn-primary" >PRINT</button></div>
+
+<div >
+  <button printSectionId="section" ngxPrint class="btn btn-primary">PRINT</button>
+</div>
+<app-footer></app-footer>
+
+<!-- <div><button class="btn btn-primary" >PRINT</button></div> -->
