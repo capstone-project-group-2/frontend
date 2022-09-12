@@ -12,12 +12,19 @@ export class CartComponent implements OnInit {
   allproducts:any=0;
   total:any;
   alltotal:any=0;
+  name:any;
+  price:any;
   constructor(private cs:CartService) { }
 
   ngOnInit(): void {
     this.cs.getData().subscribe((res)=>{
       this.products=res;
       this.allproducts=this.cs.totalAmount();
+      this.cs.invoicedata=this.products;
+      //
+      // this.cs.invoiceQnty=this.quantity;
+      // this.cs.invoicename=this.name;
+      // this.cs.invoiceprice=this.price;
     })
   }
 
@@ -32,7 +39,12 @@ export class CartComponent implements OnInit {
    console.log(this.total);
    this.alltotal=this.alltotal+this.total
    console.log(this.alltotal)
+   this.cs.invoiceTot=this.alltotal;
+   this.cs.invoiceQnty=this.quantity;
   }
+
+  
+
 
 
 }

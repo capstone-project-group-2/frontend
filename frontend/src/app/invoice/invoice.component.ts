@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { CartService } from '../cart.service';
 import { PayService } from '../pay.service';
+import { UserService } from '../user.service';
 
 @Component({
   selector: 'app-invoice',
@@ -19,9 +21,15 @@ export class InvoiceComponent implements OnInit {
   status = '';
   totalprice = '';
   paymentid = '';
+  productdetails:any;
+  invoicetot:any;
+  invoicequt:any='';
+  invoiceprice:any='';
+  invoicename:any='';
+  invoicedata:any=[];
 
-
-  constructor(private pay: PayService) { }
+  public product:any=[];
+  constructor(private pay: PayService,private cart:CartService,private user:UserService) { }
 
   ngOnInit(): void {
     this.username = this.pay.username;
@@ -35,6 +43,35 @@ export class InvoiceComponent implements OnInit {
     this.status = this.pay.status;
     this.totalprice = this.pay.totalprice;
     this.paymentid = this.pay.paymentid;
+
+    // this.cart.getData()
+    // .subscribe(res=>{
+    //   this.product=res;
+    // })
+    this.invoicedata=this.user.invoicedata;
+    this.invoicedata=this.cart.invoicedata;
+    
+   
+   
+   
+   
+  //   console.log(this.cart.invoiceTot)
+  //   console.log(this.invoicetot);
+    
+   this.invoicetot=this.cart.invoiceTot;
+  //  console.log(this.invoicetot);
+   
+  //  this.invoicename=this.cart.invoicename;
+  //  this.invoiceprice=this.cart.invoiceprice;
+   this.invoicequt=this.cart.invoiceQnty;
+
+
+  //  this.invoicetot=this.user.invoiceTot;
+  //  this.invoicename=this.user.invoicename;
+  //  this.invoiceprice=this.user.invoiceprice;
+  //  this.invoicequt=this.user.invoiceQnty;
+
+   
   }
 
 

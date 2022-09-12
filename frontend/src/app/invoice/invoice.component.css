@@ -1,0 +1,39 @@
+#section{
+    border: 1px solid;
+    width: 80%;
+    margin-top: 20px;
+    margin-left: 10%;
+}
+#from{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: medium;
+    
+}
+#to{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: medium;
+    font-size: large;
+}
+#details{
+    margin-left: 10%;
+}
+#date{
+    margin-left: 10%;
+}
+#status{
+    margin-left: 10%;
+}
+#tbl0{
+    margin-left: 30%;
+}
+#tbl{
+    border: 1px solid;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+#tbl2{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+
+}
+#tbl2 td{
+    margin-left: 10px;
+}
