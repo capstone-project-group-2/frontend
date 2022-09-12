@@ -18,12 +18,10 @@ export class ShopComponent implements OnInit {
   constructor(private ds:UserService,private route:ActivatedRoute,private router:Router,private wish:WishService,private cs:CartService) { }
 
   ngOnInit(): void {
-
-    
-
-    this.ds.getData().subscribe((res)=>{
+    this.ds.getData().subscribe(res=>{
+      console.log("res",res);
       this.product=res;
-      console.log("shop",res)
+      console.log("shop",this.product);
     })
 
     // this.alldata = this.ds.getData()

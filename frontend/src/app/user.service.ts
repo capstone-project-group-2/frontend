@@ -63,7 +63,7 @@ getAllCategory(): Category[]{
       password
     }
 
-  return this.http.post('https://ninety-ends-begin-103-165-20-21.loca.lt/account/register/',data)
+  return this.http.post('https://febinmicheal.pythonanywhere.com/account/signup/',data)
  }
 
 
@@ -74,7 +74,7 @@ const data={
   password
 }
 
-return  this.http.post('https://ninety-ends-begin-103-165-20-21.loca.lt/account/login/',data);
+return  this.http.post('https://febinmicheal.pythonanywhere.com/account/login/',data);
 
 }
 

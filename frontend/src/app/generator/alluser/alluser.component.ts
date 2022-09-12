@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { GeneratorService } from '../generator.service';
 
 @Component({
   selector: 'app-alluser',
@@ -7,9 +8,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AlluserComponent implements OnInit {
 
-  constructor() { }
+  allUser:any=[];
+
+  constructor(private gs:GeneratorService) { }
 
   ngOnInit(): void {
+    this.gs.getUser().subscribe((res:any)=>{
+       this.allUser=res;
+       console.log("alluser",this.allUser);
+       
+    })
   }
 
 }

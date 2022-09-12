@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { GeneratorService } from '../generator.service';
 
 @Component({
   selector: 'app-allcat',
@@ -7,10 +8,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AllcatComponent implements OnInit {
 
-  constructor() { }
+  getCategory=[];
+  constructor(private gs:GeneratorService) { }
 
   ngOnInit(): void {
-    
+    this.gs.getCat().subscribe((res:any)=>{
+      this.getCategory=res;
+      console.log("cat",this.getCategory);
+      
+    })
   }
 
 }

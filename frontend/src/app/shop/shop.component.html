@@ -12,11 +12,11 @@
       <h4>{{item.name}}</h4>
       <!-- <star-rating [value]="item.star" [totalstar]="5" ckeckedcolor="Yellow" uncheckedcolor="red" size="20px"></star-rating> -->
       <h6>Price:{{item.price}}</h6>
-      <p class="card-text">{{item.description}}</p>
+      <!-- <p class="card-text">{{item.description}}</p> -->
       <!-- <button class="btn btn-primary">Buy NOw</button> -->
     </div>
     <div>
-      <button (click)="addToCart(item)">Add To Cart</button>
+      <button id="but" (click)="addToCart(item)">Add To Cart</button>
     </div>
   </div>
 

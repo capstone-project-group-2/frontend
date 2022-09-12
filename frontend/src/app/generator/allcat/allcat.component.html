@@ -4,4 +4,27 @@
 <app-dashboard></app-dashboard>
 <div class="main">
 <div ><button class="btn btn-primary" routerLink="/dashboard">BACK</button></div>
+
+
+
+<div class="sub">
+    <table class="table">
+        <tr>
+            <th>ID</th>
+             <!-- <th>NAME</th>  -->
+            <th>CATEGORY</th> 
+            <!-- <th>PRICE</th>
+            <th>Stock</th> -->
+            
+        </tr>
+        <tr *ngFor="let item of getCategory" >
+            <!-- <td>{{item.id}}</td>
+            
+            <td>{{item.name}}</td> -->
+            <!-- <td>{{item.price}}</td>
+            <td>{{item.stock}}</td> -->
+        </tr>
+     </table>
+   </div> 
+
 </div>
