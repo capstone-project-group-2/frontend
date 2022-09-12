@@ -11,6 +11,13 @@ export class CartService {
 
   cartData:any=[];
   productData=new BehaviorSubject<any>([]);
+  // invoicedata:any=[]
+  
+  invoiceTot=''
+  invoiceQnty=''
+  invoiceprice=''
+  invoicename=''
+  invoicedata:any=[];
 
   // private cart:Cart = new Cart();
 
@@ -50,6 +57,10 @@ export class CartService {
       }
     })
   }
+
+  
+
+  
 
   // addToCart(product:Product):void{
   //   let cartItem = this.cart.items.find(item => item.product.id == product.id)

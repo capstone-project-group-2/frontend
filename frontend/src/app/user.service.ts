@@ -7,6 +7,11 @@ import { Product } from './model/product';
   providedIn: 'root'
 })
 export class UserService {
+  invoicedata:any=[];
+  invoiceTot=''
+  invoiceQnty=''
+  invoiceprice=''
+  invoicename=''
 
   constructor(private http:HttpClient) { }
 
@@ -75,6 +80,11 @@ const data={
 }
 
 return  this.http.post('https://ninety-ends-begin-103-165-20-21.loca.lt/account/login/',data);
+
+}
+
+getlogindata(){
+  return this.http.get<any>('https://ninety-ends-begin-103-165-20-21.loca.lt/account/login/')
 
 }
 

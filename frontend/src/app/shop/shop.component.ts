@@ -47,7 +47,7 @@ export class ShopComponent implements OnInit {
 
   addToCart(item:any){
      this.cs.addToCart(item)
-     this.router.navigateByUrl("/cart")
+    //  this.router.navigateByUrl("/cart")
   }
 
 view(item:any){

@@ -25,6 +25,7 @@ export class ViewComponent implements OnInit {
     this.cs.getData().subscribe((res)=>{
     this.viewData.push(res)
     console.log(this.viewData);
+    this.ds.invoicedata= this.viewData;
     
     })
   }
